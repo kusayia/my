@@ -10,9 +10,9 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 #1. Clear the login password
-sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 chmod -R 755 files
+sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
+# sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 # sed -i '$i uci set network.wan.ifname='"'"'eth3'"'"'' package/lean/default-settings/files/zzz-default-settings
 # sed -i '$i uci set network.wan6.ifname='"'"'eth3'"'"'' package/lean/default-settings/files/zzz-default-settings
 # sed -i '$i uci set network.wan.proto='"'"'pppoe'"'"'' package/lean/default-settings/files/zzz-default-settings
