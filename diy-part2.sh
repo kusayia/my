@@ -13,8 +13,8 @@
 chmod -R 755 files
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
-rm -rf ./feeds/packages/net/mosdns
-cp -r -f ./feeds/kenzo ./feeds/packages/net/mosdns
+#rm -rf ./feeds/packages/net/mosdns
+#cp -r -f ./feeds/kenzo ./feeds/packages/net/mosdns
 # sed -i '$i uci set network.wan.ifname='"'"'eth3'"'"'' package/lean/default-settings/files/zzz-default-settings
 # sed -i '$i uci set network.wan6.ifname='"'"'eth3'"'"'' package/lean/default-settings/files/zzz-default-settings
 # sed -i '$i uci set network.wan.proto='"'"'pppoe'"'"'' package/lean/default-settings/files/zzz-default-settings
